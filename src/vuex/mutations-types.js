@@ -1,0 +1,2 @@
+export const SET_FILTER_LIST = "SET_FILTER_LIST";
+export const GET_FILTER_LIST = "GET_FILTER_LIST";

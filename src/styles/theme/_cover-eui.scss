@@ -1,0 +1,247 @@
+$checkboxX: 18px;
+$checkboxY: 18px;
+.el-menu {
+  border-right: none;
+}
+
+.el-checkbox__inner {
+  width: $checkboxX;
+  height: $checkboxX;
+  &:after {
+    top: 3px;
+    left: 6px;
+  }
+}
+
+.el-card {
+  box-shadow: none;
+}
+
+.el-tabs__header {
+  margin-bottom: 0;
+}
+
+.el-tabs__active-bar {
+  background-color: $mainColor;
+}
+
+.el-tabs__item.is-disabled {
+  color: $mainColor;
+  font-size: 16px;
+}
+
+/*.el-input,
+.el-input__inner {
+  max-width: 220px;
+}*/
+
+.el-table__footer-wrapper thead div,
+.el-table__header-wrapper thead div {
+  background-color: #f7f9fb;
+}
+
+.el-form-item {
+  label {
+    color: #000;
+    //font-weight: bold;
+  }
+  .el-textarea {
+    width: 84%;
+  }
+}
+
+.el-form--static {
+  .el-form-item {
+    margin-bottom: 8px;
+  }
+}
+
+.el-select-dropdown {
+  margin: 2px 0;
+}
+
+.el-select-dropdown__item {
+  font-size: 14px;
+  padding: 6px 20px;
+  height: 30px;
+}
+
+.el-button {
+  span > i {
+    margin-right: 5px;
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+  &:hover {
+    opacity: .85;
+  }
+}
+
+.el-message {
+  top: 50%;
+  transform: translateX(-50%);
+  //background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.62), 0 0 6px rgba(0, 0, 0, 0.41);
+  p {
+    color: #fff;
+    margin: auto;
+  }
+}
+
+.el-input-group__append {
+  background-color: #20a0ff;
+  color: #fff;
+  &:hover {
+    background: #4db3ff;
+    border-color: #4db3ff;
+  }
+}
+
+.el-color-pickker__no_icon {
+  .el-color-picker__icon {
+    display: none;
+  }
+}
+
+.el-tag--primary {
+  background-color: #4e97d9;
+  border-color: #4e97d9;
+  color: #fff;
+}
+
+.el-tag--success {
+  background-color: #3aa99f;
+  border-color: #3aa99f;
+  color: #fff;
+}
+
+.el-tag--danger {
+  background-color: #f78b8b;
+  border-color: #f78b8b;
+  color: #fff;
+}
+
+.el-button--primary {
+  color: #fff !important;
+  background-color: #4e97d9 !important;
+  border-color: #4e97d9 !important;
+}
+
+.el-button--success {
+  color: #fff !important;
+  background-color: #3aa99f !important;
+  border-color: #3aa99f !important;
+}
+
+.el-button--danger {
+  color: #fff !important;
+  background-color: #f68a8a !important;
+  border-color: #f68a8a !important;
+}
+
+.el-button--danger-outline {
+  color: #f68a8a !important;
+  background-color: #fff !important;
+  border-color: #f68a8a !important;
+}
+
+.el-button + .el-button {
+  margin-left: 0;
+}
+
+.el-dialog--small, .el-dialog--tiny, .el-dialog--large {
+  transform: translateY(-50%) translateX(-50%);
+  top: 50% !important;
+}
+
+.content__header__tabs {
+  .el-tabs__header {
+    border-bottom: none;
+    .el-tabs__nav-wrap {
+      &:after {
+        display: none;
+        background: transparent;
+      }
+    }
+  }
+
+}
+
+.el-radio-button__orig-radio:checked + .el-radio-button__inner {
+  background-color: $mainColor;
+  border-color: $mainColor;
+  box-shadow: -1px 0 0 0 $mainColor;
+}
+
+.dialog_header {
+  color: $mainColor;
+  font-size: 16px;
+  font-weight: bolder;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #cddef2;
+}
+
+.dialog-footer {
+  .el-button {
+    padding: 13px 40px;
+  }
+}
+
+.el-dialog__body {
+  max-height: 520px;
+  overflow: auto;
+}
+
+.dialog_body {
+  .el-input {
+    max-width: 220px;
+  }
+  .el-select--lg {
+    width: 94%;
+    > .el-input {
+      width: 94%;
+      max-width: 94%;
+    }
+  }
+}
+
+.el-input {
+  max-width: 380px;
+}
+
+@media screen and (max-width: 1366px) {
+  .el-dialog {
+    width: 50% !important;
+  }
+  .dialog_body {
+    max-height: 330px;
+    overflow-y: auto;
+    .el-input {
+      max-width: 220px;
+    }
+  }
+  .el-dialog--small, .el-dialog--tiny, .el-dialog--large {
+    overflow-y: auto;
+    transform: translateY(-50%) translateX(-50%);
+    .el-dialog__body > .content-body {
+      max-height: 520px;
+      overflow-y: auto;
+    }
+  }
+  .el-dialog--small, .el-dialog--large {
+    height: 480px;
+  }
+  .el-dialog--tiny {
+    height: 284px;
+  }
+  .el-dialog--small {
+    width: 60%;
+  }
+  .el-dialog--tiny {
+    width: 45%;
+  }
+  .el-dialog--large {
+    width: 94%;
+  }
+}

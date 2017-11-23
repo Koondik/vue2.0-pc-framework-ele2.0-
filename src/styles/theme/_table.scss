@@ -1,0 +1,181 @@
+$tableBgColor: #f7f9fb;
+$theadColor: #4e97d9;
+$theadBorderColor: #cddef2;
+$tbodyBorderCorlor: #edf3fa;
+$stripeColor: #fbfcfd;
+$cellColor: #dfe6ec;
+$thHeight: 40px;
+$thFontSize: 14px;
+$tdHeight: 40px;
+$tdFontSize: 14px;
+
+.el-table th {
+  background-color: $tableBgColor;
+}
+
+.ui-table {
+  table {
+    width: 100%;
+    border-radius: 4px;
+    thead {
+      tr {
+        background: $tableBgColor;
+        th {
+          //border-bottom: 1px solid $cellColor;
+          border: 1px solid $cellColor;
+          padding: 0;
+          line-height: $thHeight - 2;
+          text-align: center;
+          font-weight: bold;
+          font-size: 14px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          border-bottom: 1px solid $cellColor;
+          line-height: $thHeight - 1;
+          padding: 0;
+          font-size: 13px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &.table-striped {
+    table {
+      tr {
+        &:nth-child(even) {
+          background: #F7F9FB;
+        }
+      }
+    }
+  }
+
+  &.table-hover {
+    table {
+      tr {
+        &:hover {
+          background-color: #eef1f6;
+        }
+      }
+    }
+  }
+
+  &.table-bordered {
+    table {
+      tr {
+        th, td {
+          border: 1px solid $cellColor;
+        }
+      }
+    }
+  }
+
+  &.table-condensed {
+    table {
+      tr {
+        th {
+          padding: 6px 0;
+        }
+        td {
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+}
+
+.table-panel {
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    tr {
+      background-color: #fff;
+      th,
+      td {
+        text-align: center;
+        border: 1px solid $cellColor;
+        line-height: ($tdHeight - 1);
+        padding: 0;
+      }
+      th {
+        background-color: #F7F9FB;
+        font-weight: bolder;
+      }
+      td {
+        cursor: pointer;
+        &:first-child {
+          cursor: default;
+        }
+      }
+    }
+  }
+}
+
+/**
+*表头固定
+ */
+.table_fix {
+  .table-head__fix {
+    padding-right: 17px;
+    background-color: #f7f9fb;
+  }
+
+  .table-body__roll {
+    width: 100%;
+    padding: 0;
+  }
+
+  .table-head__fix, .table-body__roll {
+    table {
+      width: 100%;
+      td {
+        border-left: 1px solid $cellColor;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1366px) {
+    .table-body__roll {
+      overflow-y: auto;
+      height: 180px;
+    }
+  }
+}
+
+//-------------------------------------------------
+/**
+*饿了么UI重定义
+ */
+.el-table {
+  th.is-leaf {
+    border-bottom: none;
+  }
+  thead tr {
+    border-bottom: 1px solid $theadBorderColor;
+    th {
+      background-color: $tableBgColor;
+      height: $thHeight;
+      .cell {
+        background-color: $tableBgColor;
+        font-size: $thFontSize;
+        font-weight: bold;
+        //color: $theadColor;
+      }
+    }
+  }
+  tbody tr td {
+    height: $tdHeight;
+    border-bottom: 1px solid $tbodyBorderCorlor;
+  }
+  tbody tr {
+    &:nth-child(even) {
+      background-color: $stripeColor;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.el-form--error-label {
+    .el-form-item__error {
+        left: 80px !important;
+    }
+}
+
+.plus-materials {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #c2cddb;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAqCAYAAAAqAaJlAAAA5UlEQVRYR+2YwQ2CUBBEZ62AIsCrGLwKWomWoJVoCVqJglcJeBWKsALXGDFq4u0vJCTDnc3LMjM7QdCjR3rEilZg03O9SCb+3noR5rCnoprpHQcZYD4dB0dLYMJys4C9wajZxqU0GA1Gg/GCveKAacA0oAy6SoMsrzZQhC6FWaGeiISqWgrk5jILgjKOgvV7xk8apHm9FagTLKAeICNAL3CEVUiZRP7qL6zTFpqXWRFZEQFQBpQBZfAJVFZEVkRWxK4qIouMxQZ4wfp2wZ5fLMuvyzga7gwV0M5PDmvA73nm57ZN2Ad2lQ46NbzXEgAAAABJRU5ErkJggg==) no-repeat center;
+    overflow: hidden;
+    .el-upload {
+        opacity: 0;
+    }
+}
+
+.approve-label {
+    padding: 6px 18px;
+    border-radius: 6px;
+    border: 1px solid;
+    color: #fff;
+}
+
+//待审核
+.approve-label__0 {
+    background-color: #c6c6c6;
+    border-color: #c6c6c6;
+}
+
+//通过
+.approve-label__1 {
+    background-color: #3aa99e;
+    border-color: #3aa99e;
+}
+
+//未通过
+.approve-label__2 {
+    background-color: #f68a8a;
+    border-color: #f68a8a;
+}
+
+//待审核
+.approve-text__0 {
+    color: #333;
+}
+
+//通过
+.approve-text__1 {
+    color: #3aa99e;
+}
+
+//未通过
+.approve-text__2 {
+    color: #f68a8a;
+}

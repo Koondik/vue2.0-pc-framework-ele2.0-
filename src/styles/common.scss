@@ -1,0 +1,23 @@
+$mainColor: #4e97d9;
+$dangerColor: #ff4949;
+.text-danger {
+  color: $dangerColor;
+}
+
+.hidden {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+@import "theme/_cover-eui";
+@import "theme/_layout";
+@import "theme/_box-model";
+@import "theme/_table";
+@import "theme/_form";
+@import "theme/_sidebar";
+@import "theme/_basis";
+@import "theme/_header";
+@import 'theme/buttons';

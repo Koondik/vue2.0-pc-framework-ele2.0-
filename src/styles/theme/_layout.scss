@@ -1,0 +1,141 @@
+/**
+*筛选条件区域
+ */
+.containerHeader{
+  .el-card{
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+  }
+}
+.container {
+  .el-card{
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+  }
+  .el-card__body {
+    padding-top: 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.content-body {
+  margin-top: 20px;
+  .table-pagination {
+    margin-top: 15px;
+    text-align: right;
+  }
+}
+
+.modal-title {
+  font-weight: bold;
+  color: #62a8ea;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 14px;
+}
+
+.hr-line {
+  margin-top: 12px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.entity-container {
+  margin: 14px;
+}
+
+.search-ipt {
+  width: 280px;
+}
+
+.ipt-append-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+
+/*
+
+.el-input {
+  max-width: 280px;
+  min-width: 250px;
+}
+
+@media screen and (min-width: 1900px) {
+  .el-input {
+    max-width: 280px;
+    min-width: 280px;
+  }
+}
+*/
+.el-pagination {
+  .el-input {
+    max-width: 100px;
+    min-width: 100px;
+  }
+}
+
+.handleBtnPanel {
+  .el-input {
+    max-width: 240px;
+    min-width: 240px;
+  }
+}
+
+.handleBtnPanel_sm {
+  .el-select .el-input {
+    max-width: 160px;
+    min-width: 160px;
+  }
+}
+
+
+.upload-demo {
+  .el-upload--text,
+  .el-upload-dragger {
+    //width: auto;
+    //height: auto;
+  }
+}
+
+.c-default {
+  cursor: default !important;
+}
+
+.conditions-panel {
+  .select-label {
+    margin: auto 8px auto 20px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .el-select {
+    max-width: 144px;
+  }
+  .search-ipt {
+    max-width: 260px;
+  }
+}
+
+
+

@@ -1,0 +1,47 @@
+[{
+        "name": "dev",
+        "desc": "开发环境配置",
+        "using": true,
+        "host": {
+            "cloudHost": "//192.168.0.189:8090",
+            "studentHost": "//192.168.0.189:8090",
+            "fileSystemHost": "//192.168.0.189:8090",
+            "projectHost": "//192.168.0.113:8010",
+            "cloudLoginRoot": "//192.168.0.189:85"
+        }
+    },
+    {
+        "name": "189",
+        "desc": "189测试服务器",
+        "using": false,
+        "host": {
+            "cloudHost": "//192.168.0.189:8090",
+            "studentHost": "//192.168.0.189:8090",
+            "fileSystemHost": "//192.168.0.189:8090",
+            "projectHost": "//192.168.0.113:8010",
+            "cloudLoginRoot": "//192.168.0.189:85"
+        }
+    },
+    {
+        "name": "yancheng",
+        "using": false,
+        "host": {
+            "cloudHost": "//192.168.0.189:8090",
+            "studentHost": "//192.168.0.189:8090",
+            "fileSystemHost": "//192.168.0.189:8090",
+            "projectHost": "//192.168.0.113:8010",
+            "cloudLoginRoot": "//192.168.0.189:85"
+        }
+    },
+    {
+        "name": "aliyun",
+        "using": false,
+        "host": {
+            "fileSystemHost": "//d.szlcsoft.com:8902",
+            "cloudHost": "//d.szlcsoft.com:8902",
+            "studentHost": "//d.szlcsoft.com:8902",
+            "cloudLoginRoot": "//d.szlcsoft.com:92",
+            "projectHost": "//d.szlcsoft.com:92"
+        }
+    }
+]

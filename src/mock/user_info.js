@@ -1,7 +1,7 @@
 const userInfo = {
   "username": "马云",
   "authority": "Student",
-  "token": "68d6b2fd-55e3-4c8c-a2dd-3f47afd901c8",
+  "token": "267dd84e-be8b-490d-999d-231fa9e9366a",
   "detail": {
     //学生
     // "id": 9967,
